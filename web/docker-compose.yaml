@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    restart: always
+    image: nginx:latest
+    volumes:
+      - ./src:/usr/share/nginx/html
+    ports:
+      - "8001:80"
